@@ -1,6 +1,5 @@
 <script setup lang='ts'>
 import { FormKitDataEdit } from '@sfxcode/formkit-primevue/components'
-import { useFormKitRepeater, useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
 
 const { addElement, addList, addListGroup } = useFormKitSchema()
 const { addListGroupFunctions, addGroupButtons, addInsertButton } = useFormKitRepeater()
@@ -131,8 +130,10 @@ async function submitHandler() {
 
       <div v-if="data">
         <FormKitDataEdit
-          :schema="schema" :data="data"
-          :debug-schema="false" :debug-data="true"
+          :schema="schema"
+          :data="data"
+          :debug-schema="false"
+          :debug-data="true"
           :submit-label="t('save')"
           @data-saved="submitHandler"
         />

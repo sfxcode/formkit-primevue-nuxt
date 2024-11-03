@@ -1,5 +1,11 @@
-import { defineNuxtModule, addPlugin, createResolver, installModule } from '@nuxt/kit'
-import defu from "defu";
+import {
+  defineNuxtModule,
+  addPlugin,
+  createResolver,
+  installModule,
+  addImports,
+} from '@nuxt/kit'
+import defu from 'defu'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -26,10 +32,9 @@ export default defineNuxtModule<ModuleOptions>({
     formkitAutoConfig: true,
     formkitLocale: 'en',
     formkitPluginAnimate: true,
-    formkitPluginAsterisk: true
+    formkitPluginAsterisk: true,
   },
   async setup(_options, _nuxt) {
-
     _nuxt.options.runtimeConfig.public.formkitPrimevue = defu(_nuxt.options.runtimeConfig.public.formkitPrimevue,
       {
         formkitAutoConfig: _options.formkitAutoConfig,
@@ -52,6 +57,17 @@ export default defineNuxtModule<ModuleOptions>({
       css.push('@sfxcode/formkit-primevue/dist/style.css')
     }
     _nuxt.options.css = css
+
+    const names = [
+      'useFormKitSchema',
+      'useFormKitRepeater',
+      'useInputEditor',
+      'useInputEditorSchema',
+    ]
+
+    names.forEach(name =>
+      addImports({ name, as: name, from: '@sfxcode/formkit-primevue' }),
+    )
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))
