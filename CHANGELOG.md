@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.2
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.1...v1.1.2)
+
+### 🏡 Chore
+
+- Add public access to release step ([30e080a](https://github.com/sfxcode/formkit-primevue-nuxt/commit/30e080a))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.1.1
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.0...v1.1.1)
