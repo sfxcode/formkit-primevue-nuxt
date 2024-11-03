@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.1
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.0...v1.1.1)
+
+### 🏡 Chore
+
+- Add some infos in package ([49c794f](https://github.com/sfxcode/formkit-primevue-nuxt/commit/49c794f))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.1.0
 
 
