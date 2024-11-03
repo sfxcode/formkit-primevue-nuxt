@@ -1,8 +1,9 @@
 {
   "name": "@sfxcode/formkit-primevue-nuxt",
   "version": "1.1.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/@sfxcode/formkit-primevue-nuxt",
+  "description": "FormKit PrimeVue nuxt module",
+  "homepage": "https://github.com/sfxcode/formkit-primevue-nuxt",
+  "repository": "https://github.com/sfxcode/formkit-primevue-nuxt",
   "license": "MIT",
   "type": "module",
   "build": {
@@ -25,7 +26,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --patch --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "vitest run",
