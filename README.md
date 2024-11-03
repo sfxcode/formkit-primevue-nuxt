@@ -5,7 +5,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
+Nuxt Module for PrimeVue based [FormKit Inputs](https://sfxcode.github.io/formkit-primevue/guide/inputs.html) for using [FormKit](https://formkit.com/) with the [PrimeVue UI Framework](https://www.primefaces.org/primevue/#/).
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
@@ -24,7 +24,7 @@ Install the module to your Nuxt application with one command:
 npx nuxi module add @sfxcode/formkit-primevue-nuxt
 ```
 
-That's it! You can now use FormKit PrimeVue Nuxt in your Nuxt app ✨
+That's it! You can now use FormKit PrimeVue Nuxt Module in your Nuxt app ✨
 
 ## Module Options
 
