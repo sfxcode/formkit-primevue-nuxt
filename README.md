@@ -32,7 +32,33 @@ That's it! You can now use FormKit PrimeVue Nuxt in your Nuxt app ✨
 - **formkitAutoConfig** (default: `true`): Automatically configure FormKit.
 - **formkitLocale** (default: `'en'`): Set the FormKit local (Only hen formkitAutoConfig is `true`).
 - **formkitPluginAnimate** (default: `true`): Enable FormKit animate plugin (Only hen formkitAutoConfig is `true`).
-- **formkitPluginAsterisk** (default: `true`): Enable FormKit asterisk plugin (Only hen formkitAutoConfig is `true`).  
+- **formkitPluginAsterisk** (default: `true`): Enable FormKit asterisk plugin (Only hen formkitAutoConfig is `true`).
+
+## Additional Configuration
+
+For i18n support, you can add the following configuration to your `nuxt.config.ts`:
+
+```ts
+i18n: {
+  locales: [
+    {
+      code: 'en',
+      file: 'en.json',
+    },
+    {
+      code: 'de',
+      file: 'de.json',
+    },
+  ],
+  defaultLocale: 'en',
+  vueI18n: {
+    fallbackLocale: 'en',
+  },
+},
+```
+
+Also define some locales and a sufficient configuration for Vue I18n.
+Example is provided in the playground
 
 ## Contribution
 
