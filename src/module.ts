@@ -3,7 +3,7 @@ import {
   addPlugin,
   createResolver,
   installModule,
-  addImports,
+  addImports, addComponent,
 } from '@nuxt/kit'
 import defu from 'defu'
 
@@ -65,8 +65,24 @@ export default defineNuxtModule<ModuleOptions>({
       'useInputEditorSchema',
     ]
 
+    const NPM_PCK_FORMKIT_PRIMEVUE = '@sfxcode/formkit-primevue'
+
     names.forEach(name =>
-      addImports({ name, as: name, from: '@sfxcode/formkit-primevue' }),
+      addImports({ name, as: name, from: NPM_PCK_FORMKIT_PRIMEVUE }),
+    )
+
+    const componentNames = [
+      'FormKitDataEdit',
+      'FormKitDataView',
+      'FormKitDataDebug',
+    ]
+
+    componentNames.forEach(name =>
+      addComponent({
+        name,
+        export: name,
+        filePath: NPM_PCK_FORMKIT_PRIMEVUE,
+      }),
     )
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
