@@ -25,6 +25,14 @@ npx nuxi module add @sfxcode/formkit-primevue-nuxt
 
 That's it! You can now use FormKit PrimeVue Nuxt in your Nuxt app ✨
 
+## Module Options
+
+- **includePrimeIcons** (default: `true`): Add PrimeIcons CSS to the project.
+- **includeStyles** (default: `true`): Add custom FormKit CSS to the project.
+- **formkitAutoConfig** (default: `true`): Automatically configure FormKit.
+- **formkitLocale** (default: `'en'`): Set the FormKit local (Only hen formkitAutoConfig is `true`).
+- **formkitPluginAnimate** (default: `true`): Enable FormKit animate plugin (Only hen formkitAutoConfig is `true`).
+- **formkitPluginAsterisk** (default: `true`): Enable FormKit asterisk plugin (Only hen formkitAutoConfig is `true`).  
 
 ## Contribution
 

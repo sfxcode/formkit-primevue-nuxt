@@ -125,11 +125,11 @@ async function submitHandler() {
 </script>
 
 <template>
-  <div class="card flex flex-wrap gap-10">
-    <div class="basis-1/3 md:basis-1/4">
-      <h2>Basic Demo</h2>
+  <div style="padding: 1rem">
+    <div>
+      <h2>FormKit PrimeVue Nuxt Playground</h2>
 
-      <div v-if="data" class="min-w-25rem">
+      <div v-if="data">
         <FormKitDataEdit
           :schema="schema" :data="data"
           :debug-schema="false" :debug-data="true"
@@ -138,9 +138,9 @@ async function submitHandler() {
         />
       </div>
     </div>
-    <div class="basis-1/2 md:basis-1/3">
+    <div class="">
       <h2>Formkit-PrimeVue</h2>
-      <div class="text-xl mt-12">
+      <div>
         <h4>GitHub</h4>
         <a href="https://github.com/sfxcode/formkit-primevue">formkit-primevue</a>
         <h4>More examples</h4>
