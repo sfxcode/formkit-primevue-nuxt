@@ -14,7 +14,8 @@ My new Nuxt module for doing amazing things.
 <!-- Highlight some of the features your module provide here -->
 - ⛰ &nbsp;Validation by FormKit
 - 🚠 &nbsp;UI by PrimeVue
-
+- 🏎 &nbsp;Auto import for formkit-primevue components and composables
+- 
 ## Quick Setup
 
 Install the module to your Nuxt application with one command:
