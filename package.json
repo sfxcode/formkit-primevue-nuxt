@@ -5,6 +5,9 @@
   "repository": "your-org/@sfxcode/formkit-primevue-nuxt",
   "license": "MIT",
   "type": "module",
+  "build": {
+    "failOnWarn": false
+  },
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
