@@ -1,0 +1,12 @@
+{
+  "welcome": "Willkommen",
+  "sample": "Hallo Welt",
+  "save": "Speichern",
+  "search": "Suchen",
+  "formkit": {
+    "prime": {
+      "true": "Ja",
+      "false": "Nein"
+    }
+  }
+}

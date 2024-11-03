@@ -1,17 +1,57 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, installModule } from '@nuxt/kit'
+import defu from "defu";
 
 // Module options TypeScript interface definition
-export interface ModuleOptions {}
+export interface ModuleOptions {
+  includePrimeIcons: boolean
+  includeStyles: boolean
+  formkitAutoConfig: boolean
+  formkitLocale: 'en' | 'de' | 'fr' | 'es'
+  formkitPluginAsterisk: boolean
+  formkitPluginAnimate: boolean
+}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule',
+    name: 'formkit-primevue-nuxt',
+    configKey: 'formkitPrimevue',
+    compatibility: {
+      nuxt: '^3.0.0',
+    },
   },
   // Default configuration options of the Nuxt module
-  defaults: {},
-  setup(_options, _nuxt) {
+  defaults: {
+    includePrimeIcons: true,
+    includeStyles: true,
+    formkitAutoConfig: true,
+    formkitLocale: 'en',
+    formkitPluginAnimate: true,
+    formkitPluginAsterisk: true
+  },
+  async setup(_options, _nuxt) {
+
+    _nuxt.options.runtimeConfig.public.formkitPrimevue = defu(_nuxt.options.runtimeConfig.public.formkitPrimevue,
+      {
+        formkitAutoConfig: _options.formkitAutoConfig,
+        formkitLocale: _options.formkitLocale,
+        formkitPluginAnimate: _options.formkitPluginAnimate,
+        formkitPluginAsterisk: _options.formkitPluginAsterisk,
+      },
+    )
+
     const resolver = createResolver(import.meta.url)
+    await installModule('@primevue/nuxt-module')
+    await installModule('@nuxtjs/i18n')
+    await installModule('@formkit/nuxt')
+
+    const css: string[] = _nuxt.options.css ?? []
+    if (_options.includePrimeIcons) {
+      css.push('primeicons/primeicons.css')
+    }
+    if (_options.includeStyles) {
+      css.push('@sfxcode/formkit-primevue/dist/style.css')
+    }
+    _nuxt.options.css = css
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "my-module-playground",
+  "name": "@sfxcode/formkit-primevue-nuxt-playground",
   "type": "module",
   "scripts": {
     "dev": "nuxi dev",
