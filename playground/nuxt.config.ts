@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-11-03',
   formkitPrimevue: {
+    includePrimeIcons: true,
+    includeStyles: true,
+    formkitAutoConfig: true,
+    formkitLocale: 'de',
+    formkitPluginAnimate: true,
+    formkitPluginAsterisk: true,
   },
   i18n: {
     lazy: true,
