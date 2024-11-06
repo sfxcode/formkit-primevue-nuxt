@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.1.3
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.2...v1.1.3)
+
+### 🩹 Fixes
+
+- **plugin:** WARN: Plugin has already been applied to target app. #1 ([#1](https://github.com/sfxcode/formkit-primevue-nuxt/issues/1))
+
+### 📖 Documentation
+
+- Add example for custom global FormKit Configuration ([0290f98](https://github.com/sfxcode/formkit-primevue-nuxt/commit/0290f98))
+
+### 🏡 Chore
+
+- **dependencies:** Update to nuxt 3.14 ([4743cdf](https://github.com/sfxcode/formkit-primevue-nuxt/commit/4743cdf))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.1.2
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.1...v1.1.2)
