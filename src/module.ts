@@ -47,7 +47,6 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url)
     await installModule('@primevue/nuxt-module')
     await installModule('@nuxtjs/i18n')
-    await installModule('@formkit/nuxt')
 
     const css: string[] = _nuxt.options.css ?? []
     if (_options.includePrimeIcons) {

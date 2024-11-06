@@ -2,7 +2,7 @@ import { primeInputs, primeOutputs, usePrimeInputs } from '@sfxcode/formkit-prim
 import { addPrimeAsteriskPlugin } from '@sfxcode/formkit-primevue/plugins'
 import { createAutoAnimatePlugin } from '@formkit/addons'
 import { de, en, es, fr } from '@formkit/i18n'
-import { defaultConfig, plugin } from '@formkit/vue'
+import { defaultConfig, plugin, ssrComplete, resetCount } from '@formkit/vue'
 import type { FormKitPlugin } from '@formkit/core'
 import { useRuntimeConfig } from '#app/nuxt'
 import { defineNuxtPlugin } from '#app'
@@ -45,4 +45,9 @@ export default defineNuxtPlugin((_nuxtApp) => {
       plugins: formkitPlugins,
     }))
   }
+
+  _nuxtApp.hook('app:rendered', () => {
+    resetCount()
+    ssrComplete(_nuxtApp.vueApp)
+  })
 })
