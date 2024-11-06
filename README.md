@@ -35,6 +35,33 @@ That's it! You can now use FormKit PrimeVue Nuxt Module in your Nuxt app ✨
 - **formkitPluginAnimate** (default: `true`): Enable FormKit animate plugin (Only hen formkitAutoConfig is `true`).
 - **formkitPluginAsterisk** (default: `true`): Enable FormKit asterisk plugin (Only hen formkitAutoConfig is `true`).
 
+### Custom Global FormKit Configuration
+
+You can also provide a custom FormKit configuration by adding the following configuration to your `nuxt.config.ts`:
+
+```ts
+  formkitPrimevue: {
+    formkitAutoConfig: false
+}
+```
+
+and creating a custom nuxt plugin in the `plugins` directory:
+
+for example `plugins/formkit.ts`:
+```ts
+import { defaultConfig, plugin } from '@formkit/vue'
+import { primeInputs, primeOutputs } from '@sfxcode/formkit-primevue'
+
+export default defineNuxtPlugin((nuxtApp) => {
+  // Doing something with nuxtApp
+  const app = nuxtApp.vueApp
+  app.use(plugin, defaultConfig({
+    inputs: { ...primeInputs, ...primeOutputs },
+    // ... additional configurations like locales, plugins, custom validations etc.
+  }))
+})
+
+````
 ## Additional Configuration
 
 For i18n support, you can add the following configuration to your `nuxt.config.ts`:
