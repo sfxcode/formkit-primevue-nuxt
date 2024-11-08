@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     includePrimeIcons: true,
     includeStyles: true,
     formkitAutoConfig: true,
-    formkitLocale: 'de',
+    formkitLocale: 'en',
     formkitPluginAnimate: true,
     formkitPluginAsterisk: true,
   },
