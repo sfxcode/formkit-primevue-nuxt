@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.5
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.4...v1.1.5)
+
+### 🚀 Enhancements
+
+- **locale:** Add tr as locale option #2 ([#2](https://github.com/sfxcode/formkit-primevue-nuxt/issues/2))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.1.4
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.3...v1.1.4)
