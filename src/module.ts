@@ -12,7 +12,7 @@ export interface ModuleOptions {
   includePrimeIcons: boolean
   includeStyles: boolean
   formkitAutoConfig: boolean
-  formkitLocale: 'en' | 'de' | 'fr' | 'es'
+  formkitLocale: 'en' | 'de' | 'fr' | 'es' | 'tr'
   formkitPluginAsterisk: boolean
   formkitPluginAnimate: boolean
 }

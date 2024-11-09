@@ -1,7 +1,7 @@
 import { primeInputs, primeOutputs, usePrimeInputs } from '@sfxcode/formkit-primevue'
 import { addPrimeAsteriskPlugin } from '@sfxcode/formkit-primevue/plugins'
 import { createAutoAnimatePlugin } from '@formkit/addons'
-import { de, en, es, fr } from '@formkit/i18n'
+import { de, en, es, fr, tr } from '@formkit/i18n'
 import { defaultConfig, plugin, ssrComplete, resetCount } from '@formkit/vue'
 import type { FormKitPlugin } from '@formkit/core'
 import { useRuntimeConfig } from '#app/nuxt'
@@ -38,7 +38,7 @@ export default defineNuxtPlugin((_nuxtApp) => {
       ))
     }
     app.use(plugin, defaultConfig({
-      locales: { de, en, es, fr },
+      locales: { de, en, es, fr, tr },
       // Define the active locale
       locale: runtimeConfig.public.formkitPrimevue.formkitLocale,
       inputs: { ...primeInputs, ...primeOutputs },
