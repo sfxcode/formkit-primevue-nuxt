@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.1.6
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.5...v1.1.6)
+
+### 🚀 Enhancements
+
+- **module:** Allow to disable auto install of the nuxt i18n module ([2fe58c1](https://github.com/sfxcode/formkit-primevue-nuxt/commit/2fe58c1))
+
+### 🏡 Chore
+
+- **dependencies:** Update all ([7bcf3cf](https://github.com/sfxcode/formkit-primevue-nuxt/commit/7bcf3cf))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.1.5
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.4...v1.1.5)
