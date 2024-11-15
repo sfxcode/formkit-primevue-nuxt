@@ -12,7 +12,7 @@ const options = [
 const data = ref()
 
 onMounted(() => {
-  const defaultData = { email: 'tom@mydomain.com', additionalMails: [{ email: 'peter@mydomain.com' }, { email: 'paul@mydomain.com' }], myCalendar: new Date() }
+  const defaultData = { email: 'tom@mydomain.com', additionalMails: [{ email: 'peter@mydomain.com' }, { email: 'paul@mydomain.com' }], myCalendar: new Date(), date: new Date() }
   addListGroupFunctions(defaultData, { email: 'name@mydomain.com' })
   data.value = defaultData
 })
@@ -20,6 +20,11 @@ onMounted(() => {
 const schema = reactive(
   [
     addElement('h5', ['Validation with FormKit - Inputs from PrimeVue']),
+    {
+      $formkit: 'primeOutputDate',
+      name: 'date',
+      label: 'Date',
+    },
     {
       $formkit: 'primeInputText',
       name: 'email',
@@ -125,7 +130,6 @@ async function submitHandler() {
   <div style="padding: 1rem">
     <div>
       <h2>FormKit PrimeVue Nuxt Playground</h2>
-
       <div v-if="data">
         <FormKitDataEdit
           :schema="schema"

@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     formkitLocale: 'en',
     formkitPluginAnimate: true,
     formkitPluginAsterisk: true,
+    installI18N: true,
   },
   i18n: {
     lazy: true,

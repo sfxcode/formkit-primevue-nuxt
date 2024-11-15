@@ -34,6 +34,7 @@ That's it! You can now use FormKit PrimeVue Nuxt Module in your Nuxt app ✨
 - **formkitLocale** (default: `'en'`): Set the FormKit local (Only hen formkitAutoConfig is `true`).
 - **formkitPluginAnimate** (default: `true`): Enable FormKit animate plugin (Only hen formkitAutoConfig is `true`).
 - **formkitPluginAsterisk** (default: `true`): Enable FormKit asterisk plugin (Only hen formkitAutoConfig is `true`).
+- **installI18N** (default: `true`): Install nuxt i18n module automatically.
 
 ### Custom Global FormKit Configuration
 

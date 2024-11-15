@@ -15,6 +15,7 @@ export interface ModuleOptions {
   formkitLocale: 'en' | 'de' | 'fr' | 'es' | 'tr'
   formkitPluginAsterisk: boolean
   formkitPluginAnimate: boolean
+  installI18N: boolean
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -33,6 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
     formkitLocale: 'en',
     formkitPluginAnimate: true,
     formkitPluginAsterisk: true,
+    installI18N: true,
   },
   async setup(_options, _nuxt) {
     _nuxt.options.runtimeConfig.public.formkitPrimevue = defu(_nuxt.options.runtimeConfig.public.formkitPrimevue,
@@ -46,7 +48,9 @@ export default defineNuxtModule<ModuleOptions>({
 
     const resolver = createResolver(import.meta.url)
     await installModule('@primevue/nuxt-module')
-    await installModule('@nuxtjs/i18n')
+
+    if (_options.installI18N)
+      await installModule('@nuxtjs/i18n')
 
     const css: string[] = _nuxt.options.css ?? []
     if (_options.includePrimeIcons) {
