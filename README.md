@@ -5,7 +5,10 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
+
 Nuxt Module for PrimeVue based [FormKit Inputs](https://sfxcode.github.io/formkit-primevue/guide/inputs.html) for using [FormKit](https://formkit.com/) with the [PrimeVue UI Framework](https://www.primefaces.org/primevue/#/).
+
+Based on [sfxcode/formkit-primevue](https://github.com/sfxcode/formkit-primevue).
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
