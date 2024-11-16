@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.1.7
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.6...v1.1.7)
+
+### 🚀 Enhancements
+
+- **module:** AutoImport FormKit Vue components ([099bb97](https://github.com/sfxcode/formkit-primevue-nuxt/commit/099bb97))
+
+### 📖 Documentation
+
+- Add Link to sfxcode/formkit-primevue ([c9a386e](https://github.com/sfxcode/formkit-primevue-nuxt/commit/c9a386e))
+
+### 🏡 Chore
+
+- **dependencies:** Update to formkit/primevue 2.6.7 ([e629007](https://github.com/sfxcode/formkit-primevue-nuxt/commit/e629007))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.1.6
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.5...v1.1.6)
