@@ -58,7 +58,7 @@ const schema = reactive(
     },
     {
       $formkit: 'primeDatePicker',
-      name: 'myDatePicker',
+      name: 'myCalendar',
       label: 'Date Picker',
       validation: '',
       showIcon: true,
