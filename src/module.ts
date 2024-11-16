@@ -48,6 +48,10 @@ export default defineNuxtModule<ModuleOptions>({
 
     const resolver = createResolver(import.meta.url)
     await installModule('@primevue/nuxt-module')
+    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
+    addPlugin(resolver.resolve('./runtime/plugin'))
+
+    await installModule('@formkit/nuxt', { defaultConfig: true, configFile: 'formkit.config.ts', autoImport: true })
 
     if (_options.installI18N)
       await installModule('@nuxtjs/i18n')
@@ -87,8 +91,5 @@ export default defineNuxtModule<ModuleOptions>({
         filePath: NPM_PCK_FORMKIT_PRIMEVUE,
       }),
     )
-
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve('./runtime/plugin'))
   },
 })
