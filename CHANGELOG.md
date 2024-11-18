@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.1
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.0...v1.2.1)
+
+### 💅 Refactors
+
+- **formkit-nuxt:** BREAKING CHANGE - Replace plugin installation of formkit with formkit-nuxt ([b09aaa9](https://github.com/sfxcode/formkit-primevue-nuxt/commit/b09aaa9))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.2.0
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.1.7...v1.2.0)
