@@ -51,30 +51,32 @@ export default defineNuxtModule<ModuleOptions>({
     }
     _nuxt.options.css = css
 
-    const names = [
-      'useFormKitSchema',
-      'useFormKitRepeater',
-      'useInputEditor',
-      'useInputEditorSchema',
-    ]
-
     const NPM_PCK_FORMKIT_PRIMEVUE = '@sfxcode/formkit-primevue'
 
-    names.forEach(name =>
+    const composableNames = ['useFormKitSchema', 'useFormKitRepeater', 'useInputEditor', 'useInputEditorSchema']
+    composableNames.forEach(name =>
       addImports({ name, as: name, from: NPM_PCK_FORMKIT_PRIMEVUE }),
     )
 
-    const componentNames = [
-      'FormKitDataEdit',
-      'FormKitDataView',
-      'FormKitDataDebug',
-    ]
-
+    const componentNames = ['FormKitDataEdit', 'FormKitDataView', 'FormKitDataDebug']
     componentNames.forEach(name =>
       addComponent({
         name,
         export: name,
         filePath: NPM_PCK_FORMKIT_PRIMEVUE,
+        chunkName: NPM_PCK_FORMKIT_PRIMEVUE,
+      }),
+    )
+
+    const NPM_PCK_FORMKIT = '@formkit/vue'
+
+    const formKitComponentNames = ['FormKit', 'FormKitProvider', 'FormKitMessages', 'FormKitSummary', 'FormKitSchema']
+    formKitComponentNames.forEach(name =>
+      addComponent({
+        name,
+        export: name,
+        filePath: NPM_PCK_FORMKIT,
+        chunkName: NPM_PCK_FORMKIT,
       }),
     )
   },
