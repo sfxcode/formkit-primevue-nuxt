@@ -66,17 +66,5 @@ export default defineNuxtModule<ModuleOptions>({
         chunkName: NPM_PCK_FORMKIT_PRIMEVUE,
       }),
     )
-
-    const NPM_PCK_FORMKIT = '@formkit/vue'
-
-    const formKitComponentNames = ['FormKit', 'FormKitProvider', 'FormKitMessages', 'FormKitSummary', 'FormKitSchema']
-    formKitComponentNames.forEach(name =>
-      addComponent({
-        name,
-        export: name,
-        filePath: NPM_PCK_FORMKIT,
-        chunkName: NPM_PCK_FORMKIT,
-      }),
-    )
   },
 })
