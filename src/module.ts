@@ -5,7 +5,6 @@ import {
   installModule,
   addImports, addComponent,
 } from '@nuxt/kit'
-import defu from 'defu'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
