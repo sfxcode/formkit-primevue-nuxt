@@ -4,13 +4,13 @@ export default defineNuxtConfig({
   modules: ['../src/module'],
   devtools: { enabled: true },
   compatibilityDate: '2024-11-03',
+  formkit: {
+    configFile: '../src/runtime/formkit.config.ts',
+  },
   formkitPrimevue: {
     includePrimeIcons: true,
     includeStyles: true,
-    formkitAutoConfig: true,
-    formkitLocale: 'en',
-    formkitPluginAnimate: true,
-    formkitPluginAsterisk: true,
+    installFormKit: true,
     installI18N: true,
   },
   i18n: {

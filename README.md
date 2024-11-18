@@ -14,11 +14,17 @@ Based on [sfxcode/formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
 - ⛰ &nbsp;Validation by FormKit
 - 🚠 &nbsp;UI by PrimeVue
 - 🏎 &nbsp;Auto import for formkit-primevue components and composables
-- 
+
+## Nuxt Module Dependencies
+
+- primevue-nuxt Module
+- formkit-nuxt Module
+
+Both are auto installed by default, this can be disabled in the module options.
+
 ## Quick Setup
 
 Install the module to your Nuxt application with one command:
@@ -29,43 +35,37 @@ npx nuxi module add @sfxcode/formkit-primevue-nuxt
 
 That's it! You can now use FormKit PrimeVue Nuxt Module in your Nuxt app ✨
 
+
 ## Module Options
 
 - **includePrimeIcons** (default: `true`): Add PrimeIcons CSS to the project.
 - **includeStyles** (default: `true`): Add custom FormKit CSS to the project.
-- **formkitAutoConfig** (default: `true`): Automatically configure FormKit.
-- **formkitLocale** (default: `'en'`): Set the FormKit local (Only hen formkitAutoConfig is `true`).
-- **formkitPluginAnimate** (default: `true`): Enable FormKit animate plugin (Only hen formkitAutoConfig is `true`).
-- **formkitPluginAsterisk** (default: `true`): Enable FormKit asterisk plugin (Only hen formkitAutoConfig is `true`).
 - **installI18N** (default: `true`): Install nuxt i18n module automatically.
+- **installFormKit** (default: `true`): Install nuxt formkit module automatically.
 
-### Custom Global FormKit Configuration
+### Removed options since 1.2.0
+- **formkitAutoConfig** : Automatically configure FormKit. => Removed in favor of **installFormKit**
+- **formkitLocale** ,**formkitPluginAnimate**, **formkitPluginAsterisk** : use  **formkit.config.ts** for custom configuration
 
-You can also provide a custom FormKit configuration by adding the following configuration to your `nuxt.config.ts`:
+### FormKit Configuration
+
+Use a formkit.config.ts file to configure FormKit.
 
 ```ts
-  formkitPrimevue: {
-    formkitAutoConfig: false
-}
-```
-
-and creating a custom nuxt plugin in the `plugins` directory:
-
-for example `plugins/formkit.ts`:
-```ts
-import { defaultConfig, plugin } from '@formkit/vue'
+// formkit.config.ts
+import type { DefaultConfigOptions } from '@formkit/vue'
 import { primeInputs, primeOutputs } from '@sfxcode/formkit-primevue'
 
-export default defineNuxtPlugin((nuxtApp) => {
-  // Doing something with nuxtApp
-  const app = nuxtApp.vueApp
-  app.use(plugin, defaultConfig({
-    inputs: { ...primeInputs, ...primeOutputs },
-    // ... additional configurations like locales, plugins, custom validations etc.
-  }))
-})
+const config: DefaultConfigOptions = {
+  // Define the active locale
+  inputs: { ...primeInputs, ...primeOutputs },
+}
+
+export default config
 
 ````
+
+
 ## Additional Configuration
 
 For i18n support, you can add the following configuration to your `nuxt.config.ts`:

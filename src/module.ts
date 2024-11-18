@@ -11,10 +11,7 @@ import defu from 'defu'
 export interface ModuleOptions {
   includePrimeIcons: boolean
   includeStyles: boolean
-  formkitAutoConfig: boolean
-  formkitLocale: 'en' | 'de' | 'fr' | 'es' | 'tr'
-  formkitPluginAsterisk: boolean
-  formkitPluginAnimate: boolean
+  installFormKit: boolean
   installI18N: boolean
 }
 
@@ -30,28 +27,17 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     includePrimeIcons: true,
     includeStyles: true,
-    formkitAutoConfig: true,
-    formkitLocale: 'en',
-    formkitPluginAnimate: true,
-    formkitPluginAsterisk: true,
+    installFormKit: true,
     installI18N: true,
   },
   async setup(_options, _nuxt) {
-    _nuxt.options.runtimeConfig.public.formkitPrimevue = defu(_nuxt.options.runtimeConfig.public.formkitPrimevue,
-      {
-        formkitAutoConfig: _options.formkitAutoConfig,
-        formkitLocale: _options.formkitLocale,
-        formkitPluginAnimate: _options.formkitPluginAnimate,
-        formkitPluginAsterisk: _options.formkitPluginAsterisk,
-      },
-    )
-
     const resolver = createResolver(import.meta.url)
     await installModule('@primevue/nuxt-module')
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))
 
-    await installModule('@formkit/nuxt', { defaultConfig: true, configFile: 'formkit.config.ts', autoImport: true })
+    if (_options.installFormKit)
+      await installModule('@formkit/nuxt')
 
     if (_options.installI18N)
       await installModule('@nuxtjs/i18n')

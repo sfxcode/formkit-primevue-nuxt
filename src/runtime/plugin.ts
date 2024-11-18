@@ -1,10 +1,5 @@
-import { primeInputs, primeOutputs, usePrimeInputs } from '@sfxcode/formkit-primevue'
-import { addPrimeAsteriskPlugin } from '@sfxcode/formkit-primevue/plugins'
-import { createAutoAnimatePlugin } from '@formkit/addons'
-import { de, en, es, fr, tr } from '@formkit/i18n'
-import { defaultConfig, plugin, ssrComplete, resetCount } from '@formkit/vue'
-import type { FormKitPlugin } from '@formkit/core'
-import { useRuntimeConfig } from '#app/nuxt'
+import { usePrimeInputs } from '@sfxcode/formkit-primevue'
+
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((_nuxtApp) => {
@@ -14,40 +9,4 @@ export default defineNuxtPlugin((_nuxtApp) => {
 
   const { registerInputs } = usePrimeInputs()
   registerInputs(app)
-  //
-  // if (runtimeConfig.public.formkitPrimevue.formkitAutoConfig) {
-  //   const formkitPlugins: FormKitPlugin[] = []
-  //   if (runtimeConfig.public.formkitPrimevue.formkitPluginAsterisk) {
-  //     formkitPlugins.push(addPrimeAsteriskPlugin)
-  //   }
-  //   if (runtimeConfig.public.formkitPrimevue.formkitPluginAnimate) {
-  //     formkitPlugins.push(createAutoAnimatePlugin(
-  //       {
-  //         /* optional AutoAnimate config */
-  //         // default:
-  //         duration: 250,
-  //         easing: 'ease-in-out',
-  //       },
-  //       {
-  //         /* optional animation targets object */
-  //         // default:
-  //         global: ['outer', 'inner'],
-  //         form: ['form'],
-  //         repeater: ['items'],
-  //       },
-  //     ))
-  //   }
-  //   app.use(plugin, defaultConfig({
-  //     locales: { de, en, es, fr, tr },
-  //     // Define the active locale
-  //     locale: runtimeConfig.public.formkitPrimevue.formkitLocale,
-  //     inputs: { ...primeInputs, ...primeOutputs },
-  //     plugins: formkitPlugins,
-  //   }))
-  // }
-  //
-  // _nuxtApp.hook('app:rendered', () => {
-  //   resetCount()
-  //   ssrComplete(_nuxtApp.vueApp)
-  // })
 })
