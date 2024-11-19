@@ -21,15 +21,15 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2(@babel/parser@7.26.2)(magicast@0.3.5)(rollup@4.27.3)(vue@3.5.13(typescript@5.6.3))
       '@sfxcode/formkit-primevue':
-        specifier: ^2.6.7
-        version: 2.6.7(vue@3.5.13(typescript@5.6.3))
+        specifier: ^2.6.8
+        version: 2.6.8(vue@3.5.13(typescript@5.6.3))
     devDependencies:
       '@nuxt/devtools':
         specifier: ^1.6.0
         version: 1.6.0(rollup@4.27.3)(vite@5.4.11(@types/node@22.9.0)(sass-embedded@1.79.6)(terser@5.36.0))(vue@3.5.13(typescript@5.6.3))
       '@nuxt/eslint-config':
-        specifier: ^0.7.0
-        version: 0.7.0(@vue/compiler-sfc@3.5.13)(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
+        specifier: ^0.7.1
+        version: 0.7.1(@vue/compiler-sfc@3.5.13)(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
       '@nuxt/module-builder':
         specifier: ^0.8.4
         version: 0.8.4(@nuxt/kit@3.14.159(magicast@0.3.5)(rollup@4.27.3))(nuxi@3.15.0)(typescript@5.6.3)(vue-tsc@2.1.10(typescript@5.6.3))
@@ -913,8 +913,8 @@ packages:
     peerDependencies:
       vite: '*'
 
-  '@nuxt/eslint-config@0.7.0':
-    resolution: {integrity: sha512-HAQuyAAFqfLKevIXDlkm+hrts7LpZYofY5DcB1n1nWO8a83GJfgOLwLN1MnPFt4Y3oix/FiUDu9gws+yWOMYHA==}
+  '@nuxt/eslint-config@0.7.1':
+    resolution: {integrity: sha512-y0sO0+gle+FV7g4tKQgiB8PT2sTnpND63K/PmwU+VAucz4XTCbMlI2l0tCdfQCreXtFhskFKQrJ9dGcna5eakg==}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
       eslint-plugin-format: '*'
@@ -922,8 +922,8 @@ packages:
       eslint-plugin-format:
         optional: true
 
-  '@nuxt/eslint-plugin@0.7.0':
-    resolution: {integrity: sha512-mwQRPlXaMVNC0B1lt7HhTvGlOy2jG43dZkcyGsACAEPGMv2QOhmcG146Zsq94iWeXlX2VFKsDFmR1mgS1OnB4Q==}
+  '@nuxt/eslint-plugin@0.7.1':
+    resolution: {integrity: sha512-/COfuye/C6PBlsKq1u9gZXN4recYe9bcmgNVPNnc8cSs55iilS1vPg7uBXG/nANzwdrngJ9j7hMP1PUKOiRiEg==}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
@@ -1333,8 +1333,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sfxcode/formkit-primevue@2.6.7':
-    resolution: {integrity: sha512-XpJJYKsOp5aslxfuMak44uefNdvviqjFrswByrKWIz6NjOPH/sKPUQODkKdwEpBNxPjf64AMTsEMQy2NaEO2Bw==}
+  '@sfxcode/formkit-primevue@2.6.8':
+    resolution: {integrity: sha512-GgSday2g6x8p7WYpFKwMwrPxSszdnzcxp10ryr7UYVvKNcHyAcvZYKUS0+J2YWOt958AC4bl2qTnPJyCcsexnQ==}
     peerDependencies:
       vue: ^3.4.0
 
@@ -2164,8 +2164,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.62:
-    resolution: {integrity: sha512-t8c+zLmJHa9dJy96yBZRXGQYoiCEnHYgFwn1asvSPZSUdVxnB62A4RASd7k41ytG3ErFBA0TpHlKg9D9SQBmLg==}
+  electron-to-chromium@1.5.63:
+    resolution: {integrity: sha512-ddeXKuY9BHo/mw145axlyWjlJ1UBt4WK3AlvkT7W2AbqfRQoacVoRUCF6wL3uIx/8wT9oLKXzI+rFqHHscByaA==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -5440,12 +5440,12 @@ snapshots:
       - utf-8-validate
       - vue
 
-  '@nuxt/eslint-config@0.7.0(@vue/compiler-sfc@3.5.13)(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)':
+  '@nuxt/eslint-config@0.7.1(@vue/compiler-sfc@3.5.13)(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)':
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@clack/prompts': 0.8.1
       '@eslint/js': 9.15.0
-      '@nuxt/eslint-plugin': 0.7.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
+      '@nuxt/eslint-plugin': 0.7.1(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
       '@stylistic/eslint-plugin': 2.10.1(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
       '@typescript-eslint/eslint-plugin': 8.15.0(@typescript-eslint/parser@8.15.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3))(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
       '@typescript-eslint/parser': 8.15.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
@@ -5468,7 +5468,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@nuxt/eslint-plugin@0.7.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)':
+  '@nuxt/eslint-plugin@0.7.1(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)':
     dependencies:
       '@typescript-eslint/types': 8.15.0
       '@typescript-eslint/utils': 8.15.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
@@ -6016,7 +6016,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.27.3':
     optional: true
 
-  '@sfxcode/formkit-primevue@2.6.7(vue@3.5.13(typescript@5.6.3))':
+  '@sfxcode/formkit-primevue@2.6.8(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       '@formkit/addons': 1.6.9
       '@formkit/drag-and-drop': 0.2.5
@@ -6557,7 +6557,7 @@ snapshots:
   browserslist@4.24.2:
     dependencies:
       caniuse-lite: 1.0.30001680
-      electron-to-chromium: 1.5.62
+      electron-to-chromium: 1.5.63
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
@@ -6963,7 +6963,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.62: {}
+  electron-to-chromium@1.5.63: {}
 
   emoji-regex@8.0.0: {}
 
