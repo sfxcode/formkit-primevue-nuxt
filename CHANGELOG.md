@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.4
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.3...v1.2.4)
+
+### 🏡 Chore
+
+- **dependencies:** Update to formkit/primevue 2.6.10 / primevue 4.2.4 ([cc434ae](https://github.com/sfxcode/formkit-primevue-nuxt/commit/cc434ae))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.2.3
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.2...v1.2.3)
