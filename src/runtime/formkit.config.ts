@@ -8,7 +8,7 @@ import { addPrimeAsteriskPlugin } from '@sfxcode/formkit-primevue/plugins'
 const config: DefaultConfigOptions = {
   locales: { en, de },
   // Define the active locale
-  locale: 'de',
+  locale: 'en',
   inputs: { ...primeInputs, ...primeOutputs },
 
   plugins: [
