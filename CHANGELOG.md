@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.2.5
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.4...v1.2.5)
+
+### 💅 Refactors
+
+- **formkit:** Update default locale to en ([523713b](https://github.com/sfxcode/formkit-primevue-nuxt/commit/523713b))
+
+### 🏡 Chore
+
+- **dependencies:** Update to formkit/primevue 2.6.11 ([1625d0b](https://github.com/sfxcode/formkit-primevue-nuxt/commit/1625d0b))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.2.4
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.3...v1.2.4)
