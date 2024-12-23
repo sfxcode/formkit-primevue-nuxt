@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.7
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.6...v1.2.7)
+
+### 🏡 Chore
+
+- **dependencies:** Update nuxt i18n to v9 #44 ([#44](https://github.com/sfxcode/formkit-primevue-nuxt/issues/44))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.2.6
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.5...v1.2.6)
