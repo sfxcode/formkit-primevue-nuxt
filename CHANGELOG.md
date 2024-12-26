@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.2.8
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.7...v1.2.8)
+
+### 🏡 Chore
+
+- **dependencies:** Update to Nuxt 3.15 ([383fc2e](https://github.com/sfxcode/formkit-primevue-nuxt/commit/383fc2e))
+- **dependencies:** Downgrade to typescript 5.6.3 after prepack error TS2742 ([2a289d2](https://github.com/sfxcode/formkit-primevue-nuxt/commit/2a289d2))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.2.7
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.6...v1.2.7)
