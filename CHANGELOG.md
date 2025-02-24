@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v1.2.14
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.13...v1.2.14)
+
+### 📦 Build
+
+- **packageManager:** Update to latest pnpm ([6be2d48](https://github.com/sfxcode/formkit-primevue-nuxt/commit/6be2d48))
+- **ci:** Update ([7315262](https://github.com/sfxcode/formkit-primevue-nuxt/commit/7315262))
+- **ci:** Update ([4ee9467](https://github.com/sfxcode/formkit-primevue-nuxt/commit/4ee9467))
+- **packageManager:** Update to latest pnpm ([160eded](https://github.com/sfxcode/formkit-primevue-nuxt/commit/160eded))
+
+### 🏡 Chore
+
+- **dependencies:** Update to formkit/primevue 2.7.7 and use @primeuix/themes for primevue 4.3.0 ([685555a](https://github.com/sfxcode/formkit-primevue-nuxt/commit/685555a))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v1.2.13
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.2.12...v1.2.13)
