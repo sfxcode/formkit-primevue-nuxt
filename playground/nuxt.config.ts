@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'de', file: 'de.json', name: 'German' },
     ],
-    vueI18n: './vue-i18n.options.ts',
+    vueI18n: '~/vue-i18n.options.ts',
   },
   primevue: {
     autoImport: true,

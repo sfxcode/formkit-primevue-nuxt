@@ -35,25 +35,25 @@
   },
   "dependencies": {
     "@formkit/nuxt": "^1.6.9",
-    "@nuxt/kit": "^3.15.4",
-    "@nuxtjs/i18n": "^9.2.1",
-    "@primevue/nuxt-module": "^4.3.0",
-    "@sfxcode/formkit-primevue": "^2.7.7"
+    "@nuxt/kit": "^3.16.0",
+    "@nuxtjs/i18n": "^9.3.0",
+    "@primevue/nuxt-module": "^4.3.1",
+    "@sfxcode/formkit-primevue": "^2.7.8"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^2.1.0",
-    "@nuxt/eslint-config": "^1.1.0",
+    "@nuxt/devtools": "^2.2.1",
+    "@nuxt/eslint-config": "^1.2.0",
     "@nuxt/module-builder": "^0.8.4",
-    "@nuxt/schema": "^3.15.4",
-    "@nuxt/test-utils": "^3.17.0",
+    "@nuxt/schema": "^3.16.0",
+    "@nuxt/test-utils": "^3.17.2",
     "@primeuix/themes": "^1.0.0",
     "@types/node": "latest",
-    "changelogen": "^0.5.7",
-    "eslint": "^9.21.0",
-    "nuxt": "^3.15.4",
+    "changelogen": "^0.6.1",
+    "eslint": "^9.22.0",
+    "nuxt": "^3.16.0",
     "typescript": "5.6.3",
-    "vitest": "^3.0.6",
-    "vue-tsc": "^2.2.4"
+    "vitest": "^3.0.8",
+    "vue-tsc": "^2.2.8"
   },
   "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af"
 }
