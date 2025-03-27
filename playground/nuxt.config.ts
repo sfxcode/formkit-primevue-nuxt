@@ -23,6 +23,9 @@ export default defineNuxtConfig({
       { code: 'de', file: 'de.json', name: 'German' },
     ],
     vueI18n: '~/vue-i18n.options.ts',
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
   },
   primevue: {
     autoImport: true,

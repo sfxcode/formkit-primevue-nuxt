@@ -132,8 +132,9 @@ async function submitHandler() {
       <h2>FormKit PrimeVue Nuxt Playground</h2>
       <div v-if="data">
         <FormKitDataEdit
+          v-bind="data"
           :schema="schema"
-          :data="data"
+          :show-reset="true"
           :debug-schema="false"
           :debug-data="true"
           :submit-label="t('save')"
