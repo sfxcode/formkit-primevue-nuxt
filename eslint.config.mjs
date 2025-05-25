@@ -9,7 +9,11 @@ export default createConfigForNuxt({
     // Rules for formatting
     stylistic: true,
   },
-})
-  .append(
-    // your custom flat config here...
-  )
+  dirs: {
+    src: [
+      './playground',
+    ],
+  },
+}).append(
+  // your custom flat config here...
+)
