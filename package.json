@@ -31,6 +31,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev:start": "node playground/.output/server/index.mjs",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --patch --release && npm publish --access=public && git push --follow-tags",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -43,7 +44,7 @@
     "@nuxt/kit": "^3.17.5",
     "@nuxtjs/i18n": "^9.5.5",
     "@primevue/nuxt-module": "^4.3.5",
-    "@sfxcode/formkit-primevue": "^2.9.6"
+    "@sfxcode/formkit-primevue": "^2.9.7"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.5.0",

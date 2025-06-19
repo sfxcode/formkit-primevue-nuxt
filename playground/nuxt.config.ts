@@ -1,7 +1,10 @@
 import Aura from '@primeuix/themes/aura'
 
+export const wrappedPrimeInputs: string[] = ['AutoComplete', 'CascadeSelect', 'Checkbox', 'Chip', 'ColorPicker', 'DatePicker', 'Editor', 'InputMask', 'InputNumber', 'InputOtp', 'InputText', 'Knob', 'Listbox', 'MultiSelect', 'Password', 'RadioButton', 'Rating', 'Select', 'SelectButton', 'Slider', 'Textarea', 'ToggleButton', 'ToggleSwitch', 'TreeSelect']
+
 export default defineNuxtConfig({
   modules: ['../src/module'],
+  ssr: true,
   devtools: { enabled: true },
   compatibilityDate: '2024-11-03',
   formkit: {
@@ -37,6 +40,9 @@ export default defineNuxtConfig({
         },
       },
       ripple: true,
+    },
+    components: {
+      exclude: [...wrappedPrimeInputs, 'Button', 'Form', 'FormField', 'Chart'],
     },
   },
 })
