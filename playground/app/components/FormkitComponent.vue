@@ -127,29 +127,18 @@ async function submitHandler() {
 </script>
 
 <template>
-  <div style="padding: 1rem">
-    <div>
-      <h2>FormKit PrimeVue Nuxt Playground</h2>
-      <div v-if="data">
-        <FormKitDataEdit
-          v-bind="data"
-          :schema="schema"
-          :show-reset="true"
-          :debug-schema="false"
-          :debug-data="true"
-          :submit-label="t('save')"
-          @data-saved="submitHandler"
-        />
-      </div>
-    </div>
-    <div class="">
-      <h2>Formkit-PrimeVue</h2>
-      <div>
-        <h4>GitHub</h4>
-        <a href="https://github.com/sfxcode/formkit-primevue">formkit-primevue</a>
-        <h4>More examples</h4>
-        <a href="https://formkit-primevue.netlify.app/">Formkit PrimeVue Demo</a>
-      </div>
+  <div>
+    <h2>FormKit PrimeVue Nuxt Playground</h2>
+    <div v-if="data">
+      <FormKitDataEdit
+        v-bind="data"
+        :schema="schema"
+        :show-reset="true"
+        :debug-schema="false"
+        :debug-data="true"
+        :submit-label="t('save')"
+        @data-saved="submitHandler"
+      />
     </div>
   </div>
 </template>

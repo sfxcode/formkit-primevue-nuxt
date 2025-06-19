@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   modules: ['../src/module'],
   ssr: true,
   devtools: { enabled: true },
+  future: {
+    compatibilityVersion: 4,
+  },
   compatibilityDate: '2024-11-03',
   formkit: {
     configFile: '../src/runtime/formkit.config.ts',
@@ -31,7 +34,7 @@ export default defineNuxtConfig({
     },
   },
   primevue: {
-    autoImport: true,
+    autoImport: false,
     options: {
       theme: {
         preset: Aura,
