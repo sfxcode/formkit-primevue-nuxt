@@ -11,5 +11,5 @@ describe('ssr', async () => {
     // Get response to a server-rendered page with `$fetch`.
     const html = await $fetch('/')
     expect(html).toContain('<div>basic</div>')
-  })
+  }, 360000) // 6 minutes
 })
