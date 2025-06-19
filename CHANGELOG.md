@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.3.9
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.8...v1.3.9)
+
+### 🏡 Chore
+
+- **dependencies:** Update dependencies to latest versions ([5578739](https://github.com/sfxcode/formkit-primevue-nuxt/commit/5578739))
+- **dependencies:** Update @sfxcode/formkit-primevue to version 2.9.7 and add wrappedPrimeInputs configuration ([f46910b](https://github.com/sfxcode/formkit-primevue-nuxt/commit/f46910b))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.3.8
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.7...v1.3.8)
