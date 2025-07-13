@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.11
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.10...v1.3.11)
+
+### 🏡 Chore
+
+- **package:** Update @sfxcode/formkit-primevue to version 2.9.9 ([400a990](https://github.com/sfxcode/formkit-primevue-nuxt/commit/400a990))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.3.10
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.9...v1.3.10)
