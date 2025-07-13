@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v1.3.10
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.9...v1.3.10)
+
+### 🩹 Fixes
+
+- **FormkitComponent:** Change data binding from v-bind to v-model ([b8e2a77](https://github.com/sfxcode/formkit-primevue-nuxt/commit/b8e2a77))
+
+### 💅 Refactors
+
+- **playground:** Deal with primevue delayed css loading issue when ssr is set to true ([2681fe2](https://github.com/sfxcode/formkit-primevue-nuxt/commit/2681fe2))
+
+### 🏡 Chore
+
+- **package:** Update dependencies to latest versions ([e6ff487](https://github.com/sfxcode/formkit-primevue-nuxt/commit/e6ff487))
+
+### ✅ Tests
+
+- **basic:** Increase timeout for server-rendered page response to 6 minutes ([f38e19d](https://github.com/sfxcode/formkit-primevue-nuxt/commit/f38e19d))
+- **vitest:** Add configuration for test hook timeout of 6 minutes ([b2113a4](https://github.com/sfxcode/formkit-primevue-nuxt/commit/b2113a4))
+- **vitest:** Add configuration for test hook timeout of 6 minutes ([1efa3b2](https://github.com/sfxcode/formkit-primevue-nuxt/commit/1efa3b2))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.3.9
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.8...v1.3.9)
