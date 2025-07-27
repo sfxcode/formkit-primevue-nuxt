@@ -1,6 +1,6 @@
 import Aura from '@primeuix/themes/aura'
 
-export const wrappedPrimeInputs: string[] = ['AutoComplete', 'CascadeSelect', 'Checkbox', 'Chip', 'ColorPicker', 'DatePicker', 'Editor', 'InputMask', 'InputNumber', 'InputOtp', 'InputText', 'Knob', 'Listbox', 'MultiSelect', 'Password', 'RadioButton', 'Rating', 'Select', 'SelectButton', 'Slider', 'Textarea', 'ToggleButton', 'ToggleSwitch', 'TreeSelect']
+export const wrappedPrimeInputs: string[] = ['AutoComplete', 'CascadeSelect', 'Checkbox', 'Chip', 'ColorPicker', 'DatePicker', 'InputMask', 'InputNumber', 'InputOtp', 'InputText', 'Knob', 'Listbox', 'MultiSelect', 'Password', 'RadioButton', 'Rating', 'Select', 'SelectButton', 'Slider', 'Textarea', 'ToggleButton', 'ToggleSwitch', 'TreeSelect']
 
 export default defineNuxtConfig({
   modules: ['../src/module'],
@@ -20,7 +20,6 @@ export default defineNuxtConfig({
     installI18N: true,
   },
   i18n: {
-    lazy: true,
     langDir: 'locales',
     defaultLocale: 'en',
     strategy: 'no_prefix',
@@ -28,10 +27,6 @@ export default defineNuxtConfig({
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'de', file: 'de.json', name: 'German' },
     ],
-    vueI18n: '~/vue-i18n.options.ts',
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
   },
   primevue: {
     autoImport: false,
