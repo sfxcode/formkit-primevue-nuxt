@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.11...v1.4.0)
+
+### 🚀 Enhancements
+
+- **i18n:** Update internationalization for app using nuxt i18n version 10 ([fa07cf7](https://github.com/sfxcode/formkit-primevue-nuxt/commit/fa07cf7))
+
+### 🩹 Fixes
+
+- **module:** Update Nuxt compatibility and dependencies to support version 4.0.0 ([9b5596d](https://github.com/sfxcode/formkit-primevue-nuxt/commit/9b5596d))
+
+### 🏡 Chore
+
+- **package:** Update dependencies and Nuxt configuration ([2ed8b56](https://github.com/sfxcode/formkit-primevue-nuxt/commit/2ed8b56))
+- **release:** Update release script to use minor versioning ([5e268cf](https://github.com/sfxcode/formkit-primevue-nuxt/commit/5e268cf))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.3.11
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.3.10...v1.3.11)
