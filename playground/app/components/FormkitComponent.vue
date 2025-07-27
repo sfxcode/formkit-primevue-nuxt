@@ -19,11 +19,11 @@ onMounted(() => {
 
 const schema = reactive(
   [
-    addElement('h5', ['Validation with FormKit - Inputs from PrimeVue']),
+    addElement('h3', ['Validation with FormKit - Inputs from PrimeVue']),
     {
       $formkit: 'primeOutputDate',
       name: 'date',
-      label: 'Date',
+      label: 'Formatted Date',
     },
     {
       $formkit: 'primeInputText',
@@ -128,7 +128,7 @@ async function submitHandler() {
 
 <template>
   <div>
-    <h2>FormKit PrimeVue Nuxt Playground</h2>
+    <h2>{{ t('app_description') }}</h2>
     <div v-if="data">
       <FormKitDataEdit
         v-model="data"

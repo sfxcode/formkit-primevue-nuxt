@@ -1,11 +1,11 @@
 <script setup lang='ts'>
-import FormkitComponent from '~/components/FormkitComponent.vue'
+const { t } = useI18n()
 </script>
 
 <template>
   <div style="padding: 1rem">
     <div class="">
-      <h2>Formkit-PrimeVue</h2>
+      <h2>{{ t('app_name') }}</h2>
       <div>
         <h4>GitHub</h4>
         <a href="https://github.com/sfxcode/formkit-primevue">formkit-primevue</a>
