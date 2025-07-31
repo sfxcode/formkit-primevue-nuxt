@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.5.0
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.4.1...v1.5.0)
+
+### 🏡 Chore
+
+- **module:** Update Nuxt compatibility to version 3.16.0 or higher ([d11f810](https://github.com/sfxcode/formkit-primevue-nuxt/commit/d11f810))
+- **FormkitComponent:** Add validation for email field ([072a6f8](https://github.com/sfxcode/formkit-primevue-nuxt/commit/072a6f8))
+- **release:** Update release script to use minor versioning ([54a00e4](https://github.com/sfxcode/formkit-primevue-nuxt/commit/54a00e4))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.4.1
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.4.0...v1.4.1)
