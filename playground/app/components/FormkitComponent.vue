@@ -43,6 +43,7 @@ const schema = reactive(
             label: 'Additional Mail',
             name: 'email',
             outerClass: 'col-6',
+            validation: 'required|email',
 
           },
           addGroupButtons('', 'col-6'),
