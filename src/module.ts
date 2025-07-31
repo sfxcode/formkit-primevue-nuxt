@@ -19,7 +19,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'formkit-primevue-nuxt',
     configKey: 'formkitPrimevue',
     compatibility: {
-      nuxt: '^3.0.0',
+      nuxt: '>=3.16.0',
     },
   },
   // Default configuration options of the Nuxt module
