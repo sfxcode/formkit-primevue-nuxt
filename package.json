@@ -43,7 +43,7 @@
     "@formkit/nuxt": "^1.6.9",
     "@nuxtjs/i18n": "^10.0.3",
     "@primevue/nuxt-module": "^4.3.7",
-    "@sfxcode/formkit-primevue": "^3.0.2"
+    "@sfxcode/formkit-primevue": "^3.0.3"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
@@ -60,7 +60,7 @@
     "nuxt": "^4.0.2",
     "typescript": "5.9.2",
     "vitest": "^3.2.4",
-    "vue-tsc": "^3.0.4"
+    "vue-tsc": "^3.0.5"
   },
   "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
 }
