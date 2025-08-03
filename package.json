@@ -43,7 +43,7 @@
     "@formkit/nuxt": "^1.6.9",
     "@nuxtjs/i18n": "^10.0.3",
     "@primevue/nuxt-module": "^4.3.7",
-    "@sfxcode/formkit-primevue": "^3.0.3"
+    "@sfxcode/formkit-primevue": "^3.0.4"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
