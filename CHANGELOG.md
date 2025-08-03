@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.5.1
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.0...v1.5.1)
+
+### 🏡 Chore
+
+- **release:** Update release script to use patch versioning ([91e7f8f](https://github.com/sfxcode/formkit-primevue-nuxt/commit/91e7f8f))
+- **dependencies:** Update @sfxcode/formkit-primevue to v3.0.3 and vue-tsc to v3.0.5 ([2798401](https://github.com/sfxcode/formkit-primevue-nuxt/commit/2798401))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.5.0
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.4.1...v1.5.0)
