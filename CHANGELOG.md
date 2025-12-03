@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.5.7
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.6...v1.5.7)
+
+### 🚀 Enhancements
+
+- **FormkitComponent:** Add reset event handler to log reset trigger ([93b23a3](https://github.com/sfxcode/formkit-primevue-nuxt/commit/93b23a3))
+
+### 🏡 Chore
+
+- **dependencies:** Update dependencies to latest versions ([4cbb2dc](https://github.com/sfxcode/formkit-primevue-nuxt/commit/4cbb2dc))
+- **dependencies:** Update package manager to pnpm@10.24.0 ([da379f2](https://github.com/sfxcode/formkit-primevue-nuxt/commit/da379f2))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.5.6
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.5...v1.5.6)
