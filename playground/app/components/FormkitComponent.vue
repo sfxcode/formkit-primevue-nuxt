@@ -139,6 +139,7 @@ async function submitHandler() {
         :debug-data="true"
         :submit-label="t('save')"
         @data-saved="submitHandler"
+        @on-reset="() => { console.log('reset triggered') }"
       />
     </div>
   </div>
