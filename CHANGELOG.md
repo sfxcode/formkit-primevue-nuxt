@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.5.8
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.7...v1.5.8)
+
+### 🏡 Chore
+
+- **dependencies:** Update dependencies to latest versions ([6938493](https://github.com/sfxcode/formkit-primevue-nuxt/commit/6938493))
+- **dependencies:** Update package manager to pnpm@10.25.0 ([d6e9a6b](https://github.com/sfxcode/formkit-primevue-nuxt/commit/d6e9a6b))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.5.7
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.6...v1.5.7)
