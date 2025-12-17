@@ -40,10 +40,10 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@formkit/nuxt": "^1.6.9",
+    "@formkit/nuxt": "^1.7.0",
     "@nuxtjs/i18n": "^10.2.1",
     "@primevue/nuxt-module": "^4.5.3",
-    "@sfxcode/formkit-primevue": "^3.1.4"
+    "@sfxcode/formkit-primevue": "^3.2.1"
   },
   "devDependencies": {
     "@nuxt/devtools": "^3.1.1",
