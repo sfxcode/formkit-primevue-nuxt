@@ -3,7 +3,9 @@ import Aura from '@primeuix/themes/aura'
 export const wrappedPrimeInputs: string[] = ['AutoComplete', 'CascadeSelect', 'Checkbox', 'Chip', 'ColorPicker', 'DatePicker', 'InputMask', 'InputNumber', 'InputOtp', 'InputText', 'Knob', 'Listbox', 'MultiSelect', 'Password', 'RadioButton', 'Rating', 'Select', 'SelectButton', 'Slider', 'Textarea', 'ToggleButton', 'ToggleSwitch', 'TreeSelect']
 
 export default defineNuxtConfig({
-  modules: ['../src/module'],
+  modules: [
+    '../src/module',
+    '@nuxt/hints'],
   ssr: true,
   devtools: { enabled: true },
   future: {
