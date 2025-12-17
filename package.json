@@ -54,12 +54,12 @@
     "@nuxt/test-utils": "^3.21.0",
     "@primeuix/themes": "^2.0.2",
     "@primevue/forms": "^4.5.3",
-    "@types/node": "^24.10.3",
+    "@types/node": "^24.10.4",
     "changelogen": "^0.6.2",
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.2",
     "nuxt": "^4.2.2",
     "typescript": "5.9.3",
-    "vitest": "^4.0.15",
+    "vitest": "^4.0.16",
     "vue-tsc": "^3.1.8"
   },
   "packageManager": "pnpm@10.26.0+sha512.3b3f6c725ebe712506c0ab1ad4133cf86b1f4b687effce62a9b38b4d72e3954242e643190fc51fa1642949c735f403debd44f5cb0edd657abe63a8b6a7e1e402"
