@@ -18,8 +18,8 @@ importers:
         specifier: ^4.5.3
         version: 4.5.3(@babel/parser@7.28.5)(magicast@0.5.1)(vue@3.5.25(typescript@5.9.3))
       '@sfxcode/formkit-primevue':
-        specifier: ^3.2.1
-        version: 3.2.1(vue@3.5.25(typescript@5.9.3))
+        specifier: ^3.2.2
+        version: 3.2.2(vue@3.5.25(typescript@5.9.3))
     devDependencies:
       '@nuxt/devtools':
         specifier: ^3.1.1
@@ -1741,8 +1741,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sfxcode/formkit-primevue@3.2.1':
-    resolution: {integrity: sha512-7vmn7fVZFX9UPCjMYdBL7NaK+ZqmtMaOku2TQ31uV2IpZcsJ5ozJsJXE0S6FJCJBbq0L928Tekuo5K9iGDFH5g==}
+  '@sfxcode/formkit-primevue@3.2.2':
+    resolution: {integrity: sha512-pyiw/1pWvM72CoIvzCcRCHv6Behafbxktzv5BWGbXy9PIpb1sBnwl6mT1uXFWxG8t6oNqfS7mYcWETkGGakjmw==}
     peerDependencies:
       vue: ^3.4.0
 
@@ -6840,7 +6840,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.53.5':
     optional: true
 
-  '@sfxcode/formkit-primevue@3.2.1(vue@3.5.25(typescript@5.9.3))':
+  '@sfxcode/formkit-primevue@3.2.2(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@formkit/addons': 1.7.0
       '@formkit/core': 1.7.0
