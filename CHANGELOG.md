@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.6.0
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.8...v1.6.0)
+
+### 🏡 Chore
+
+- **dependencies:** Update @formkit packages to version 1.7.0 ([fc85b1a](https://github.com/sfxcode/formkit-primevue-nuxt/commit/fc85b1a))
+- **release:** Update release script to use minor versioning ([da0d1fa](https://github.com/sfxcode/formkit-primevue-nuxt/commit/da0d1fa))
+- **dependencies:** Update package manager to pnpm@10.26.0 ([6a5f6ab](https://github.com/sfxcode/formkit-primevue-nuxt/commit/6a5f6ab))
+- **dependencies:** Update @types/node, eslint, and vitest to latest versions ([699a082](https://github.com/sfxcode/formkit-primevue-nuxt/commit/699a082))
+- **dependencies:** Update @sfxcode/formkit-primevue to version 3.2.2 ([5fecc3f](https://github.com/sfxcode/formkit-primevue-nuxt/commit/5fecc3f))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.5.8
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.7...v1.5.8)
