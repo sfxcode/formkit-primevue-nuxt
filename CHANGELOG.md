@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.6.1
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.6.0...v1.6.1)
+
+### 🏡 Chore
+
+- **dependencies:** Add @nuxt/hints module to nuxt.config.ts ([aa4aa39](https://github.com/sfxcode/formkit-primevue-nuxt/commit/aa4aa39))
+- **release:** Update release script to use patch versioning ([c8b201b](https://github.com/sfxcode/formkit-primevue-nuxt/commit/c8b201b))
+- **dependencies:** Update @formkit/nuxt, @primevue/nuxt-module, @sfxcode/formkit-primevue, and vue-tsc to latest versions ([87e3ea7](https://github.com/sfxcode/formkit-primevue-nuxt/commit/87e3ea7))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.6.0
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.5.8...v1.6.0)
