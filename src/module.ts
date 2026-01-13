@@ -57,7 +57,7 @@ export default defineNuxtModule<ModuleOptions>({
       addImports({ name, as: name, from: NPM_PCK_FORMKIT_PRIMEVUE }),
     )
 
-    const componentNames = ['FormKitDataEdit', 'FormKitDataView', 'FormKitDataDebug']
+    const componentNames = ['FormKitDataEdit', 'FormKitDataView']
     componentNames.forEach(name =>
       addComponent({
         name,
