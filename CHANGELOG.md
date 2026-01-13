@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.6.2
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.6.1...v1.6.2)
+
+### 🏡 Chore
+
+- **dependencies:** Update @sfxcode/formkit-primevue, @nuxt/hints, @nuxt/test-utils, @types/node, vitest, and vue-tsc to latest versions ([610ff5e](https://github.com/sfxcode/formkit-primevue-nuxt/commit/610ff5e))
+- **module:** Remove FormKitDataDebug component from imports ([c78ac5f](https://github.com/sfxcode/formkit-primevue-nuxt/commit/c78ac5f))
+- **FormkitComponent:** Add id attribute to FormKitDataEdit component ([a24b88b](https://github.com/sfxcode/formkit-primevue-nuxt/commit/a24b88b))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.6.1
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.6.0...v1.6.1)
