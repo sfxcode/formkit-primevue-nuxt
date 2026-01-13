@@ -132,6 +132,7 @@ async function submitHandler() {
     <h2>{{ t('app_description') }}</h2>
     <div v-if="data">
       <FormKitDataEdit
+        id="FormKitDataEdit1"
         v-model="data"
         :schema="schema"
         :show-reset="true"
