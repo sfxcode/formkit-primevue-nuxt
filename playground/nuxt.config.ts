@@ -5,6 +5,7 @@ export const wrappedPrimeInputs: string[] = ['AutoComplete', 'CascadeSelect', 'C
 export default defineNuxtConfig({
   modules: [
     '../src/module',
+    '@unocss/nuxt',
     '@nuxt/hints'],
   ssr: true,
   devtools: { enabled: true },
