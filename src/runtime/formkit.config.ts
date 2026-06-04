@@ -24,7 +24,7 @@ const config: DefaultConfigOptions = {
         // default:
         global: ['outer', 'inner'],
         form: ['form'],
-        repeater: ['items'],
+        primeRepeater: ['input'],
       },
     ),
     addPrimeAsteriskPlugin,
