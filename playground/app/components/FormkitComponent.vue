@@ -9,6 +9,10 @@ const options = [
   { label: 'Every day', value: 'daily' },
 ]
 
+function createDefaultValue(): object {
+  return { email: 'name@mydomain.com' }
+}
+
 const data = ref()
 
 onMounted(() => {
@@ -33,23 +37,50 @@ const schema = reactive(
       validation: 'required|email',
       outerClass: 'col-7',
     },
-    addList('additionalMails', [
-      addElement('div', ['Additional Mail'], { class: 'text-xl' }),
-      addInsertButton(),
-      addListGroup(
-        [
-          {
-            $formkit: 'primeInputText',
-            label: 'Additional Mail',
-            name: 'email',
-            outerClass: 'col-6',
-            validation: 'required|email',
+    {
+      $formkit: 'primeRepeater',
+      name: 'additionalMails',
+      label: 'Additional Mails',
+      listClass: '',
+      listItemClass: 'flex gap-2',
+      buttonGroupClass: 'col-4 buttonGroupClass mt-6 flex gap-1',
+      buttonGroupItemClass: 'buttonGroupItemClass',
+      newItem: createDefaultValue(),
+      displayCloneButton: true,
+      displayAddButton: true,
+      displayDeleteButton: true,
+      insertButtonLabel: 'Add Mail',
+      insertButtonClass: 'mb-2',
+      alwaysDisplayInsertButton: true,
+      children: [
+        {
+          $formkit: 'primeInputText',
+          label: 'Additional Mail',
+          name: 'email',
+          outerClass: 'col-4',
+          validation: 'required|email',
 
-          },
-          addGroupButtons('', 'col-6'),
-        ],
-      ),
-    ], true, 'true'),
+        },
+      ],
+    },
+
+    // addList('additionalMails', [
+    //   addElement('div', ['Additional Mail'], { class: 'text-xl' }),
+    //   addInsertButton(),
+    //   addListGroup(
+    //     [
+    //       {
+    //         $formkit: 'primeInputText',
+    //         label: 'Additional Mail',
+    //         name: 'email',
+    //         outerClass: 'col-6',
+    //         validation: 'required|email',
+    //
+    //       },
+    //       addGroupButtons('', 'col-6'),
+    //     ],
+    //   ),
+    // ], true, 'true'),
 
     {
       $formkit: 'primeTextarea',
