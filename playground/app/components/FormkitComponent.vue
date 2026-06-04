@@ -1,6 +1,5 @@
 <script setup lang='ts'>
 const { addElement } = useFormKitSchema()
-const { addListGroupFunctions } = useFormKitRepeater()
 const { t } = useI18n()
 
 const options = [
