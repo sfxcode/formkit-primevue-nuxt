@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-const { addElement, addList, addListGroup } = useFormKitSchema()
-const { addListGroupFunctions, addGroupButtons, addInsertButton } = useFormKitRepeater()
+const { addElement } = useFormKitSchema()
+const { addListGroupFunctions } = useFormKitRepeater()
 const { t } = useI18n()
 
 const options = [
@@ -13,13 +13,7 @@ function createDefaultValue(): object {
   return { email: 'name@mydomain.com' }
 }
 
-const data = ref()
-
-onMounted(() => {
-  const defaultData = { email: 'tom@mydomain.com', additionalMails: [{ email: 'peter@mydomain.com' }, { email: 'paul@mydomain.com' }], myCalendar: new Date(), date: new Date() }
-  addListGroupFunctions(defaultData, { email: 'name@mydomain.com' })
-  data.value = defaultData
-})
+const data = ref({ email: 'tom@mydomain.com', additionalMails: [{ email: 'peter@mydomain.com' }, { email: 'paul@mydomain.com' }], myCalendar: new Date(), date: new Date() })
 
 const schema = reactive(
   [
@@ -43,8 +37,7 @@ const schema = reactive(
       label: 'Additional Mails',
       listClass: '',
       listItemClass: 'flex gap-2',
-      buttonGroupClass: 'col-4 buttonGroupClass mt-6 flex gap-1',
-      buttonGroupItemClass: 'buttonGroupItemClass',
+      buttonGroupClass: 'col-4 mt-6 flex gap-1',
       newItem: createDefaultValue(),
       displayCloneButton: true,
       displayAddButton: true,
@@ -63,25 +56,6 @@ const schema = reactive(
         },
       ],
     },
-
-    // addList('additionalMails', [
-    //   addElement('div', ['Additional Mail'], { class: 'text-xl' }),
-    //   addInsertButton(),
-    //   addListGroup(
-    //     [
-    //       {
-    //         $formkit: 'primeInputText',
-    //         label: 'Additional Mail',
-    //         name: 'email',
-    //         outerClass: 'col-6',
-    //         validation: 'required|email',
-    //
-    //       },
-    //       addGroupButtons('', 'col-6'),
-    //     ],
-    //   ),
-    // ], true, 'true'),
-
     {
       $formkit: 'primeTextarea',
       name: 'myText',
