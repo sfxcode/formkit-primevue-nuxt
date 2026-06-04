@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.8.0
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.7.0...v1.8.0)
+
+### 🏡 Chore
+
+- **package:** Update dependencies to latest versions ([4b7ff84](https://github.com/sfxcode/formkit-primevue-nuxt/commit/4b7ff84))
+- **package:** Add @unocss/nuxt and update related dependencies ([f4d9c87](https://github.com/sfxcode/formkit-primevue-nuxt/commit/f4d9c87))
+- **config:** Rename repeater to primeRepeater in formkit configuration ([6a1aa83](https://github.com/sfxcode/formkit-primevue-nuxt/commit/6a1aa83))
+- **config:** Add uno.config.ts for UnoCSS configuration ([41d79aa](https://github.com/sfxcode/formkit-primevue-nuxt/commit/41d79aa))
+- **component:** Refactor additional mails input using primeRepeater with default value ([7b9edbd](https://github.com/sfxcode/formkit-primevue-nuxt/commit/7b9edbd))
+- **component:** Simplify FormkitComponent by initializing data directly and removing unused functions ([83030c4](https://github.com/sfxcode/formkit-primevue-nuxt/commit/83030c4))
+- **component:** Remove unused addListGroupFunctions from FormkitComponent ([63b459f](https://github.com/sfxcode/formkit-primevue-nuxt/commit/63b459f))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.7.0
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.6.2...v1.7.0)
