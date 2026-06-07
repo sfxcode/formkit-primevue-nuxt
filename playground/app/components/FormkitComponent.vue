@@ -8,6 +8,17 @@ const options = [
   { label: 'Every day', value: 'daily' },
 ]
 
+const cityOptions = [
+  { name: 'New York', code: 'NY' },
+  { name: 'Rome', code: 'RM' },
+  { name: 'London', code: 'LDN' },
+  { name: 'Istanbul', code: 'IST' },
+  { name: 'Paris', code: 'PRS' },
+  { name: 'Berlin', code: 'BER' },
+  { name: 'Tokyo', code: 'TKY' },
+  { name: 'Madrid', code: 'MAD' },
+]
+
 function createDefaultValue(): object {
   return { email: 'name@mydomain.com' }
 }
@@ -31,6 +42,27 @@ const schema = reactive(
       outerClass: 'col-7',
     },
     {
+      $formkit: 'primeListbox',
+      name: 'selectedCities',
+      label: '🔄 Transfer Mode - Select Your Cities',
+      help: 'Move cities between lists using buttons or drag and drop. See /samples/ListboxTransfer for more examples!',
+      displayMode: 'transfer',
+      transferLeftHeaderText: 'Available Cities',
+      transferRightHeaderText: 'Selected Cities',
+      transferHeaderClass: 'text-base font-semibold',
+      transferAll: true,
+      transferDragDrop: true,
+      transferButtonSeverity: 'secondary',
+      optionLabel: 'name',
+      optionValue: 'code',
+      options: cityOptions,
+      filter: true,
+      filterPlaceholder: 'Search cities...',
+      validation: 'required|min:1',
+      outerClass: 'col-6',
+
+    },
+    {
       $formkit: 'primeRepeater',
       name: 'additionalMails',
       label: 'Additional Mails',
@@ -44,6 +76,8 @@ const schema = reactive(
       insertButtonLabel: 'Add Mail',
       insertButtonClass: 'mb-2',
       alwaysDisplayInsertButton: true,
+      draggable: true,
+      displayDragHandle: true,
       children: [
         {
           $formkit: 'primeInputText',
@@ -54,6 +88,7 @@ const schema = reactive(
 
         },
       ],
+      outerClass: 'col-4',
     },
     {
       $formkit: 'primeTextarea',
@@ -150,5 +185,12 @@ async function submitHandler() {
   </div>
 </template>
 
-<style lang='scss' scoped>
+<style lang='css'>
+.p-formkit-transfer {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  width: 50%;
+  min-width: 400px;
+}
 </style>
