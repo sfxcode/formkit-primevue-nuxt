@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.8.1
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.8.0...v1.8.1)
+
+### 🏡 Chore
+
+- **package:** Update @sfxcode/formkit-primevue to v4.2.3 ([35a8c39](https://github.com/sfxcode/formkit-primevue-nuxt/commit/35a8c39))
+- **component:** Add city selection with transfer list and drag-and-drop support to FormkitComponent ([2a19595](https://github.com/sfxcode/formkit-primevue-nuxt/commit/2a19595))
+- **package:** Update release script to use patch version in changelogen ([cf3c580](https://github.com/sfxcode/formkit-primevue-nuxt/commit/cf3c580))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.8.0
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.7.0...v1.8.0)
