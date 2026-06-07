@@ -18,8 +18,8 @@ importers:
         specifier: ^4.5.5
         version: 4.5.5(@babel/parser@7.29.7)(magicast@0.5.3)(vue@3.5.35(typescript@6.0.3))
       '@sfxcode/formkit-primevue':
-        specifier: ^4.1.10
-        version: 4.1.10(vue@3.5.35(typescript@6.0.3))
+        specifier: ^4.2.3
+        version: 4.2.3(vue@3.5.35(typescript@6.0.3))
     devDependencies:
       '@nuxt/devtools':
         specifier: ^4.0.0-alpha.7
@@ -2431,8 +2431,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sfxcode/formkit-primevue@4.1.10':
-    resolution: {integrity: sha512-CswW9d5qXwt+NCzTdZFQYrG5MatQVl/QpevwUvp+KeWkk2o+wgJpSBHrcwPobcfr7EnfXM4fwgSQWVMdSkcq8Q==}
+  '@sfxcode/formkit-primevue@4.2.3':
+    resolution: {integrity: sha512-s4zZAtnRcJzHe0NlEQjy9l5KQqj/PYARsQ630DhYJ7Mvw+2yY6UfHLslPEk14pXCyCB/EZxMSPD5ZRYsldBAnA==}
     engines: {node: '>=24.0.0', pnpm: '>=11.0.0'}
     peerDependencies:
       vue: ^3.4.0
@@ -8419,9 +8419,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.61.1':
     optional: true
 
-  '@sfxcode/formkit-primevue@4.1.10(vue@3.5.35(typescript@6.0.3))':
+  '@sfxcode/formkit-primevue@4.2.3(vue@3.5.35(typescript@6.0.3))':
     dependencies:
       '@formkit/addons': 2.0.0
+      '@formkit/auto-animate': 0.9.0
       '@formkit/core': 2.0.0
       '@formkit/i18n': 2.0.0
       '@formkit/inputs': 2.0.0
