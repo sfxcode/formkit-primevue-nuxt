@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.8.2
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.8.1...v1.8.2)
+
+### 🏡 Chore
+
+- **package:** Update dependencies to latest versions - formkit 2.1.0 ([5bd45c4](https://github.com/sfxcode/formkit-primevue-nuxt/commit/5bd45c4))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.8.1
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.8.0...v1.8.1)
