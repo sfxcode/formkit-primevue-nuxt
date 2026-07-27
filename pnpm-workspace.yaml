@@ -1,0 +1,13 @@
+shamefullyHoist: true
+strictPeerDependencies: false
+allowBuilds:
+  esbuild: false
+  unrs-resolver: false
+minimumReleaseAgeExclude:
+  - '@nuxt/*'
+  - '@sfxcode/*'
+  - nuxt@4.5.1
+# PrimeVue > 4.5.5 is no longer open source, see https://primeui.dev/nextchapter
+overrides:
+  '@primevue/nuxt-module': 4.5.5
+

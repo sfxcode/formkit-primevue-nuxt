@@ -12,6 +12,8 @@ Based on [sfxcode/formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
+> ⚠️ **PrimeVue version support**: only PrimeVue `4.5.5` and earlier are supported. Newer versions are not open source anymore, see [PrimeUI Next Chapter](https://primeui.dev/nextchapter).
+
 ## Features
 
 - ⛰ &nbsp;Validation by FormKit
