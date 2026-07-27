@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.8.3
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.8.2...v1.8.3)
+
+### 🩹 Fixes
+
+- **deps:** Resolve 'primevue' module-not-found by moving hoist config to pnpm-workspace.yaml ([c61bae0](https://github.com/sfxcode/formkit-primevue-nuxt/commit/c61bae0))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.8.2
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.8.1...v1.8.2)
