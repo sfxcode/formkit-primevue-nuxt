@@ -47,23 +47,23 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "4.0.0-beta.3",
-    "@nuxt/eslint-config": "^1.16.0",
+    "@nuxt/eslint-config": "^1.17.0",
     "@nuxt/hints": "^1.1.4",
-    "@nuxt/kit": "^4.5.1",
+    "@nuxt/kit": "^4.5.2",
     "@nuxt/module-builder": "^1.0.3",
-    "@nuxt/schema": "^4.5.1",
-    "@nuxt/test-utils": "^4.1.0",
+    "@nuxt/schema": "^4.5.2",
+    "@nuxt/test-utils": "^4.3.3",
     "@primeuix/themes": "2.0.3",
     "@primevue/forms": "^4.5.5",
     "@types/node": "latest",
-    "@unocss/nuxt": "^66.7.5",
+    "@unocss/nuxt": "^66.10.5",
     "changelogen": "^0.6.2",
-    "eslint": "^10.8.0",
-    "nuxt": "^4.5.1",
+    "eslint": "^10.12.0",
+    "nuxt": "^4.5.2",
     "typescript": "6.0.3",
-    "unocss": "^66.7.5",
-    "vitest": "^4.1.10",
-    "vue-tsc": "^3.3.9"
+    "unocss": "^66.10.5",
+    "vitest": "^4.1.11",
+    "vue-tsc": "^3.3.12"
   },
   "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72"
 }
