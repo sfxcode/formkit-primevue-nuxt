@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v1.8.5
+
+[compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.8.4...v1.8.5)
+
 ## v1.8.4
 
 [compare changes](https://github.com/sfxcode/formkit-primevue-nuxt/compare/v1.8.3...v1.8.4)
